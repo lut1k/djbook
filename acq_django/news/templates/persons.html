@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Persons</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #5b80b2;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 3px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        th {
+            background: #79aec8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Persons</h1>
+    <hr>
+
+    <table>
+        <tr>
+            {% for per in person %}
+            <th>{{ per.name }}</th>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for per in person %}
+            <td>{{ per.shirt_size }}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for per in person %}
+            <td>{{ per.birth_date }}</td>
+            {% endfor %}
+        </tr>
+    </table>
+    <hr>
+    <a href="{% url 'news-persons' %}">Person</a>
+</body>
+</html>

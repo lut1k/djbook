@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
+
 # Create your models here.
 
 
@@ -41,7 +42,7 @@ class Person(models.Model):
         """
         Returns the url to access a particular blog-author instance.
         """
-        return reverse('people', args=[str(self.pk)])
+        return reverse('news-persons', args=[str(self.pk)])
 
     def save(self, *args, **kwargs):
         if self.name == "Yolo":
@@ -68,6 +69,15 @@ class Person(models.Model):
     full_name = property(_get_full_name)
 
 
+class OrderedPerson(Person):
+    """
+    Прокси-модель для сортировки класса Person.
+    """
+    class Meta:
+        proxy = True
+        ordering = ["last_name"]
+
+
 class Group(models.Model):
     name = models.CharField(max_length=128)
     members = models.ManyToManyField(Person, through="Membership")
@@ -89,3 +99,8 @@ class Membership(models.Model):
         return "{}, {}".format(self.person, self.group)
 
 
+class MyFiles(models.Model):
+    upload = models.FileField(upload_to='uploads/')
+
+    def __str__(self):
+        return self.upload
