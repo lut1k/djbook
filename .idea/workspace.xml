@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72a4768c-4f25-4af6-9251-ab46bc644939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/acq_django/news/templates/persons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acq_django/news/templates/year_archive.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acq_django/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acq_django/acq_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/acq_django/acq_django/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acq_django/news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/acq_django/news/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acq_django/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/acq_django/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acq_django/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/acq_django/news/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +53,8 @@
       <option name="presentableId" value="Default" />
       <updated>1573896002345</updated>
       <workItem from="1573896003466" duration="10938000" />
-      <workItem from="1574001397475" duration="9177000" />
+      <workItem from="1574001397475" duration="9374000" />
+      <workItem from="1574087949091" duration="192000" />
     </task>
     <servers />
   </component>
