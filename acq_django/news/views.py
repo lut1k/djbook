@@ -1,5 +1,6 @@
-from django.shortcuts import render, HttpResponse, redirect
-from . import models
+from django.shortcuts import render, HttpResponse, redirect, HttpResponseRedirect
+from . import models, forms
+from django.views.generic import View
 
 # Create your views here.
 
@@ -43,3 +44,34 @@ def persons(request):
     }
     return render(request, 'persons.html', context)
 
+# Представления-классы.
+
+
+def myview(request):
+    if request.method == "POST":
+        form = forms.MyForm(request.POST)
+        if form.is_valid():
+            # <process form cleaned data>
+            return HttpResponseRedirect('/success/')
+        else:
+            form = forms.MyForm(initial={'key': 'value'})
+
+        return render(request, 'form_template.html', {'form': form})
+
+
+class MyFormView(View):
+    form_class = forms.MyForm
+    initial = {'key': 'value'}
+    template_name = 'form_template.html'
+
+    def get(self, request, *args, **kwargs):
+        form = self.form_class(initial=self.initial)
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(initial=request.POST)
+        if form.is_valid():
+            # <process form cleaned data>
+            return HttpResponseRedirect('/success/')
+
+        return render(request, self.template_name, {'form': form})

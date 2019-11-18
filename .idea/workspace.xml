@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72a4768c-4f25-4af6-9251-ab46bc644939" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/acq_django/news/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djbook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acq_django/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/acq_django/news/views.py" afterDir="false" />
+>>>>>>> d365e058b404b1573f7f98df0724b429f88edaaf
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -53,8 +60,13 @@
       <option name="presentableId" value="Default" />
       <updated>1573896002345</updated>
       <workItem from="1573896003466" duration="10938000" />
+<<<<<<< HEAD
       <workItem from="1574001397475" duration="9374000" />
       <workItem from="1574087949091" duration="192000" />
+=======
+      <workItem from="1574001397475" duration="9177000" />
+      <workItem from="1574072179004" duration="2185000" />
+>>>>>>> d365e058b404b1573f7f98df0724b429f88edaaf
     </task>
     <servers />
   </component>
